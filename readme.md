@@ -9,9 +9,9 @@
 
 - [X] ~~Coördinaten en afbeeldingen uitproberen~~
 
-- [ ] **Bewegende coördinaatblokjes op het raster size 1**
+- [X] ~~Bewegende coördinaatblokjes op het raster size 1~~
 
-- [ ] **Bewegende coördinaatblokjes op het raster size 2**
+- [X] **Bewegende coördinaatblokjes op het raster size 2**
 
 - [ ] **Straten correct tekenen (afbeelding afhankelijk van de buren)**
 

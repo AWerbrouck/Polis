@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane prefHeight="291.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polis.ui.UIController">
+<?import polis.tools.ToolButton?>
+<?import javafx.scene.control.RadioButton?>
+<?import polis.tools.road.RoadButton?>
+<AnchorPane prefHeight="291.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polis.ui.UICompanion">
    <children>
-      <Button fx:id="residence" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" onAction="#placeResidence" />
-      <Button fx:id="industry" layoutX="103.0" layoutY="14.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />
-      <Button fx:id="commerce" layoutX="192.0" layoutY="14.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />
-      <Button fx:id="road" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="road" onAction="#placeRoad"/>
-      <Button fx:id="bulldozer" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />
-      <Button fx:id="selection" layoutX="103.0" layoutY="99.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />
+      <ToolButton fx:id="residence" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0" >
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/polis/buttons/residence.png" />
+               </image></ImageView>
+         </graphic>
+      </ToolButton>
+      <ToolButton fx:id="industry" layoutX="138.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0"  >
+       <graphic>
+           <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@/polis/buttons/industry.png" />
+               </image></ImageView>
+       </graphic>
+      </ToolButton>
+    <ToolButton fx:id="commerce" layoutX="262.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0"  >
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/polis/buttons/commerce.png" />
+                </image></ImageView>
+        </graphic>
+    </ToolButton>
+       <RoadButton fx:id="roadB" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0" >
+       <graphic>
+           <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@/polis/buttons/road.png" />
+               </image></ImageView>
+       </graphic>
+    </RoadButton>
+<!--      <Button fx:id="commerce" layoutX="192.0" layoutY="14.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />-->
+<!--      <Button fx:id="road" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#placeRoad" prefHeight="75.0" prefWidth="77.0" text="road" />-->
+<!--      <Button fx:id="bulldozer" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />-->
+<!--      <Button fx:id="selection" layoutX="103.0" layoutY="99.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="77.0" text="Button" />-->
    </children>
 </AnchorPane>
