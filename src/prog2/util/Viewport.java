@@ -85,8 +85,11 @@ public class Viewport extends Pane {
     }
 
     private void handleKeyReleased(KeyEvent keyEvent) {
-        System.out.println(keyEvent.getCode());
         switch (keyEvent.getCode()) {
+            case W:
+            case A:
+            case S:
+            case D:
             case LEFT:
             case RIGHT:
             case UP:
@@ -111,26 +114,29 @@ public class Viewport extends Pane {
         // Deze code heeft heel wat gemeenschappelijk met
         // die van mouseMoved hieronder, maar dat lijkt niet gemakkelijk
         // te vermijden
-        System.out.println(keyEvent.getCode());
         switch (keyEvent.getCode()) {
+            case A:
             case LEFT:
-                dY = 0;
-                dX = -moveDistance;
-                timeline.play();
-                break;
-            case RIGHT:
                 dY = 0;
                 dX = moveDistance;
                 timeline.play();
                 break;
-            case UP:
-                dX = 0;
-                dY = -moveDistance;
+            case D:
+            case RIGHT:
+                dY = 0;
+                dX = -moveDistance;
                 timeline.play();
                 break;
-            case DOWN:
+            case W:
+            case UP:
                 dX = 0;
                 dY = moveDistance;
+                timeline.play();
+                break;
+            case S:
+            case DOWN:
+                dX = 0;
+                dY = -moveDistance;
                 timeline.play();
                 break;
         }
@@ -191,8 +197,9 @@ public class Viewport extends Pane {
     private void resetView() {
         client.setScaleX(initialZoom);
         client.setScaleY(initialZoom);
-        client.setTranslateX(0.0);
-        client.setTranslateY(0.0);
+        client.setTranslateX(100);
+        client.setTranslateY(100);
+
     }
 
     @Override

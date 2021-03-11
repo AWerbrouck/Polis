@@ -1,15 +1,14 @@
 package polis;
 
-import javafx.event.EventHandler;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
+import javafx.scene.shape.StrokeType;
 
 public class Kaart {
     public void DrawKaart(Pane pane, int CELL_SIZE, int size){
-        for (int r = 5; r < 32 -5 ; r++){
-            for (int k = 5; k < 32 -5 ; k++){
+        for (int r = 0; r < 32; r++){
+            for (int k = 0; k < 32; k++){
                 Polygon poly = new Polygon(
                         0, 0,
                         CELL_SIZE * size, 0.5 * CELL_SIZE * size,
@@ -21,37 +20,11 @@ public class Kaart {
                 poly.setTranslateX(x);
                 poly.setTranslateY(y);
                 poly.setFill(Color.rgb(204, 249, 170));
-                poly.setStroke(Color.TRANSPARENT);
-                onSelected(poly);
-                poly.setViewOrder (- r - k - 1.0); // voor een 1 x 1 tegel.setViewOrder (- row - column - 1.0) // voor een 1 x 1 tegel
+                poly.setStroke(Color.rgb(160, 230, 160));
+                poly.setStrokeType(StrokeType.INSIDE);
+                poly.setViewOrder (- r - k - 1.0);
                 pane.getChildren().addAll(poly);
             }
         }
-    }
-    
-    public void onSelected(Polygon poly){
-        poly.setOnMouseMoved(new EventHandler<MouseEvent>() {
-            @Override public void handle(MouseEvent event) {
-//                poly.setStroke(Color.rgb(255,255,255,0.75));
-                poly.setStroke(Color.RED);
-//                poly.setStrokeWidth(5);
-            }
-        });
-    
-        poly.setOnMouseExited(new EventHandler<MouseEvent>() {
-            @Override public void handle(MouseEvent event) {
-                poly.setStroke(Color.rgb(204, 249, 170));
-            }
-        });
-        
-        poly.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override public void handle(MouseEvent event) {
-                if(poly.getFill() == Color.BLACK){
-                    poly.setFill(Color.rgb(204, 249, 170));
-                }else {
-                    poly.setFill(Color.BLACK);
-                }
-            }
-        });
     }
 }
