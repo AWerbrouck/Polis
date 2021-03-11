@@ -2,80 +2,75 @@
 
 <hr width="30%" style="border:2px solid teal"> </hr>
 
-### TODO's
+## TODO's
 <hr width="15%" style="border:1px solid orange"> </hr>
 
-- [ ] bewegende selectie muis 1 raster
-- [ ] bewegende selectie muis 2 rasters
+### deel 1
+
+- [X] ~~Coördinaten en afbeeldingen uitproberen~~
+
+- [ ] **Bewegende coördinaatblokjes op het raster size 1**
+
+- [ ] **Bewegende coördinaatblokjes op het raster size 2**
+
+- [ ] **Straten correct tekenen (afbeelding afhankelijk van de buren)**
+
+- [ ] Zones aanduiden met de muis
+
+- [ ] Straten leggen met de muis
+
+- [x] ~~Viewport~~
+
+- [ ] Knoppenpaneel
+
+- [ ] Onderscheid tussen drie verschillende zones
+
+- [ ] Bulldozergereedchsap
+
+- [ ] User interface is volledig - klikken loopt door de verschillende afbeeldingen
+
+- [x] ~~Ondersteuning pijltjestoetsen in Viewport~~
+
+- [ ] Initiële weg die de stad met de regio verbindt
 
 
-_testing Todo for gh_
+
+### deel 2
+
+- [ ] Introductie van simulatiemotor met één actor
+
+- [ ] Actors zoeken een huis om in te wonen
+
+- [ ] Motor kan gestart/gestopt worden met een knop
+
+- [ ] Bewoners zoeken een job
+
+- [ ] Handelaars en arbeiders
+
+- [ ] Goederen
+
+- [ ] Shoppers en klanten
+
+- [ ] Werkt nu correct wanneer een zone verwijderd wordt tijdens de simulatie
+
+- [ ] Infopaneel rechtsonder toont gegevens van zone
+
+- [ ] Infopaneel is nu 'dynamisch' (past zich aan als de achterliggende gegevens veranderen)
+
+- [ ] Algemene statistieken
+
+- [ ] Gebruik van properties-bestand voor parameters
+
+- [ ] Enkele TODOs afgewerkt die nog in de code stonden
+
+- [ ] Hoofdvenster kan nu groter of kleiner gemaakt worden
+
+- [ ] Simulatie stopt/start nu ook met spatietoets
+
+- [ ] Laatste TODOs afgewerkt
 
 
+## STRUCTUUR 
+<hr width="15%" style="border:1px solid purple"> </hr>
 
-
-
-
-
-
-
-
-
-
-[comment]: <> (* Coördinaten en afbeeldingen uitproberen)
-
-[comment]: <> (* Bewegende coördinaatblokjes op het raster)
-
-[comment]: <> (* Straten correct tekenen &#40;afbeelding afhankelijk van de buren&#41;)
-
-[comment]: <> (* Zones aanduiden met de muis)
-
-[comment]: <> (* Straten leggen met de muis)
-
-[comment]: <> (* Viewport)
-
-[comment]: <> (* Knoppenpaneel)
-
-[comment]: <> (* Onderscheid tussen drie verschillende zones)
-
-[comment]: <> (* Bulldozergereedchsap)
-
-[comment]: <> (* User interface is volledig - klikken loopt door de verschillende afbeeldingen)
-
-[comment]: <> (* Ondersteuning pijltjestoetsen in Viewport)
-
-[comment]: <> (* Initiële weg die de stad met de regio verbindt)
-
-[comment]: <> (Hiermee is het eerste deel van de opgave ongeveer afgewerkt. Op naar het tweede deel…)
-
-[comment]: <> (* Introductie van simulatiemotor met één actor)
-
-[comment]: <> (* Actors zoeken een huis om in te wonen)
-
-[comment]: <> (* Motor kan gestart/gestopt worden met een knop)
-
-[comment]: <> (* Bewoners zoeken een job)
-
-[comment]: <> (* Handelaars en arbeiders)
-
-[comment]: <> (* Goederen)
-
-[comment]: <> (* Shoppers en klanten)
-
-[comment]: <> (* Werkt nu correct wanneer een zone verwijderd wordt tijdens de simulatie)
-
-[comment]: <> (* Infopaneel rechtsonder toont gegevens van zone)
-
-[comment]: <> (* Infopaneel is nu 'dynamisch' &#40;past zich aan als de achterliggende gegevens veranderen&#41;)
-
-[comment]: <> (* Algemene statistieken)
-
-[comment]: <> (* Gebruik van properties-bestand voor parameters)
-
-[comment]: <> (* Enkele TODOs afgewerkt die nog in de code stonden)
-
-[comment]: <> (* Hoofdvenster kan nu groter of kleiner gemaakt worden)
-
-[comment]: <> (* Simulatie stopt/start nu ook met spatietoets)
-
-[comment]: <> (* Laatste TODOs afgewerkt)
+TODO
