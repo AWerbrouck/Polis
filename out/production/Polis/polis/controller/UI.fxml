@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import polis.view.bulldozer.BulldozerButton?>
+<?import polis.view.road.RoadButton?>
+<?import polis.view.selection.SelectionButton?>
+<?import polis.view.tool.ToolButton?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="291.0" prefWidth="287.0"
+            xmlns="http://javafx.com/javafx/11.0.2" fx:controller="polis.controller.UICompanion">
+    <ToolButton fx:id="residence" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/residence.png"/>
+            </ImageView>
+        </graphic>
+    </ToolButton>
+    <ToolButton fx:id="industry" layoutX="138.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/industry.png"/>
+            </ImageView>
+        </graphic>
+    </ToolButton>
+    <ToolButton fx:id="commerce" layoutX="262.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/commerce.png"/>
+            </ImageView>
+        </graphic>
+    </ToolButton>
+    <RoadButton fx:id="roadB" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/road.png"/>
+            </ImageView>
+        </graphic>
+    </RoadButton>
+    <BulldozerButton fx:id="bulldozer" layoutX="138.0" layoutY="90.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/bulldozer.png"/>
+            </ImageView>
+        </graphic>
+    </BulldozerButton>
+    <SelectionButton fx:id="selection" layoutX="14.0" layoutY="166.0" mnemonicParsing="false" prefHeight="48.0"
+                prefWidth="96.0">
+        <graphic>
+            <ImageView fitHeight="48.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@/polis/buttons/selection.png"/>
+            </ImageView>
+        </graphic>
+    </SelectionButton>
+</BorderPane>

@@ -7,8 +7,8 @@ import javafx.scene.shape.StrokeType;
 
 public class KaartTest {
     public void DrawKaart(Pane pane, int CELL_SIZE, int size){
-        for (int r = 0; r < 32; r++){
-            for (int k = 0; k < 32; k++){
+        for (int r = -4; r < 4; r++){
+            for (int k = -4; k < 4; k++){
                 Polygon poly = new Polygon(
                         0, 0,
                         CELL_SIZE * size, 0.5 * CELL_SIZE * size,

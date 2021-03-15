@@ -7,29 +7,33 @@
 
 ### deel 1
 
-- [X] ~~Coördinaten en afbeeldingen uitproberen~~
+- [X] Coördinaten en afbeeldingen uitproberen
 
-- [X] ~~Bewegende coördinaatblokjes op het raster size 1~~
+- [X] Bewegende coördinaatblokjes op het raster size 1
 
-- [X] **Bewegende coördinaatblokjes op het raster size 2**
+- [X] Bewegende coördinaatblokjes op het raster size 2
 
-- [ ] **Straten correct tekenen (afbeelding afhankelijk van de buren)**
+- [X] Straten correct tekenen (afbeelding afhankelijk van de buren)
 
-- [ ] Zones aanduiden met de muis
+- [X] Zones aanduiden met de muis
 
-- [ ] Straten leggen met de muis
+- [X] Straten leggen met de muis
 
-- [x] ~~Viewport~~
+- [ ] Drag selection
+
+- [x] Viewport
+
+- [ ] SelectionButton
 
 - [ ] Knoppenpaneel
 
 - [ ] Onderscheid tussen drie verschillende zones
 
-- [ ] Bulldozergereedchsap
+- [ ] Bulldozergereedschap
 
 - [ ] User interface is volledig - klikken loopt door de verschillende afbeeldingen
 
-- [x] ~~Ondersteuning pijltjestoetsen in Viewport~~
+- [x] Ondersteuning pijltjestoetsen in Viewport
 
 - [ ] Initiële weg die de stad met de regio verbindt
 
